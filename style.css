@@ -8,9 +8,12 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, pink, #00FF6C);
+    background: linear-gradient(to right, rgb(252, 64, 246), yellow);
 }
-
+ h1 {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
 #container {
     display: grid;
     justify-content: center;
@@ -18,12 +21,14 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto) repeat(5,100px);
+   
 }
 
 #container > button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
+    border-radius: 6px;
     outline: none;
     background-color: rgba(255,255,255,0.75);
 }
@@ -45,6 +50,9 @@ body {
     padding: 15px;
     word-wrap: break-word;
     word-break: break-all;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    
 }
 
 .output .current-operand {
